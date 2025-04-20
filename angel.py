@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 from flask import Flask, request
 
-TOKEN = '6700432608:AAGLewsKHozPU8WoAIzvdEtYLGUhqZAZw'  # replace your bot token
+TOKEN = '5853354544:AAFkDd7rxX8nXNmmBSDVElycQZZQ7tth6x8'  # replace your bot token
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -29,8 +29,8 @@ def random_answer(message):
     )
     
     keyboard = types.InlineKeyboardMarkup().add(
-        types.InlineKeyboardButton('🔗 GitHub 🔗', url='https://github.com/SudoR2spr'),
-        types.InlineKeyboardButton(text="⚡ Powered By", url='https://t.me/Opleech_WD')
+        types.InlineKeyboardButton('🔗 GitHub 🔗', url='https://github.com'),
+        types.InlineKeyboardButton(text="⚡ Powered By", url='https://t.me/am_films')
     )
     
     bot.send_photo(
@@ -77,7 +77,7 @@ def makeKeyboard(movie_list):
     return markup
 
 def tamilmv():
-    mainUrl = 'https://www.1tamilmv.moi'
+    mainUrl = 'https://www.1TamilBlasters.moi'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36',
     }
